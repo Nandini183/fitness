@@ -1,5 +1,30 @@
-<center>
-  <h1>FitLife Gym</h1>
-<h2>Your Fitness Journey Starts Here<h2>
-  <button>Home</button>
-<button onclick="goHome()">Go to Home</button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Fitness Routine Tracker</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+<h1>Fitness Routine Tracker</h1>
+</header>
+<main>
+<section id="tracker">
+<h2>Track Your Workout</h2>
+<form id="workout-form">
+<label for="workout">Workout:</label>
+<input type="text" id="workout" name="workout" required />
+ 
+        <label for="duration">Duration (minutes):</label>
+<input type="number" id="duration" name="duration" required />
+ 
+        <button type="submit">Add Workout</button>
+</form>
+<ul id="workout-list"></ul>
+</section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
